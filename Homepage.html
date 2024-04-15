@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../project/Homepage.css" />
+    <!-- light tilt font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--menu icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- cancel icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>PORTFOLIO PROJECT</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>T<span style="color: white;">EEMARH</span></h1>
+      <nav class="menubar">
+        <ul>
+          <li><a href="#" class="hide-menubar">Home</a></li>
+          <li><a href="#" class="hide-menubar">About</a></li>
+          <li><a href="#" class="hide-menubar">Team</a></li>
+          <li><a href="#" class="hide-menubar">Skills</a></li>
+          <li><a href="#" class="hide-menubar">Contact</a></li>
+        </ul>
+        <span class="material-symbols-outlined menu"> menu </span>
+      </nav>
+      <nav class="sidebar-content">
+        <ul>
+          <li><span class="material-symbols-outlined cancel"> close </span></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- second header -->
+
+    <!-- homepage section -->
+    <main class="home-section">
+      <section class="home-section-content">
+        <div class="overlay">
+          <h3>Hello, I am</h3>
+          <h1>TEEMARH LEEKAY.</h1>
+          <p>I am a <span>Web Developer</span> with extensive experience. My expertise is to create and design Websites, graphic design and many more</p>
+          <div>
+            <button>View Projects</button>
+            <button>Contact Me</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ABOUT SECTION -->
+    <main class="about-section">
+      <section class="about-section-content">
+        <h1>About Me.</h1>
+        <div class="main-content">
+          <div class="about-section-image">
+            <img src="../project/bgremove author.png" alt="">
+          </div>
+          <div class="about-section-speech">
+            <h2>I am a Modern Web Developer</h2>
+            <p>My name is Teemarh Leekay, I'm from Lagos State in Nigeria. I have an extensive experience in developing and designing website for the past five years. In my last place of work, I received three different significant awards of recognition for excelling and pulling many projects successfully in my team. To be honest, I have aspired to be a website developer since I was a kid, I'd watch my Dad coding all day. He'd shared tips and pros of being a coder. I created my first portfolio webiste when i was 12. I earned my master in computer science in the university of Harvard, and of course I am still looking forward to pursue more knowledge in computer science to help myself and whatsoever company I'd be working with grow into excellence and prosperity.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- script -->
+
+    <script>
+      const cancel = document.querySelector(".cancel");
+      const menu = document.querySelector(".menu");
+      const sidebarContent = document.querySelector(".sidebar-content");
+      const overlay = document.querySelector('.overlay');
+      cancel.addEventListener("click", () => {
+        sidebarContent.style.display = "none";
+      });
+
+      cancel.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          sidebarContent.style.display = "none";
+        }
+      });
+
+      menu.addEventListener("click", () => {
+        sidebarContent.style.display = "flex";
+      });
+    </script>
+  </body>
+</html>
